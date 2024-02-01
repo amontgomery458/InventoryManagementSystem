@@ -1,0 +1,15 @@
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.deps.json
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.dll
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.pdb
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\bin\Debug\net8.0\IMS.CoreBusiness.dll
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.AssemblyReference.cache
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfoInputs.cache
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfo.cs
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.CopyComplete
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.dll
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\refint\IMS.UseCases.dll
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.pdb
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\ref\IMS.UseCases.dll

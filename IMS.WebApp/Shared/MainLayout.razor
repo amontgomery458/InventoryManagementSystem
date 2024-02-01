@@ -1,0 +1,125 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<PageTitle>IMS.WebApp</PageTitle>
+
+<nav class="navbar navbar-expand-lg bg-black navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Inventory Management</a>
+        <button @onclick="@(()=>OnClickMenu("navbar-toggler"))" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="@NavMenuCssClass" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" @onclick="@(()=>OnClickMenu("nav-item"))">
+                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                        <span class="oi oi-home" aria-hidden="true"></span> Home
+                    </NavLink>
+                </li>
+                <li class="nav-item" @onclick="@(()=>OnClickMenu("nav-item"))">
+                    <NavLink class="nav-link" href="inventories">
+                        <span class="oi oi-plus" aria-hidden="true"></span> Inventories
+                    </NavLink>
+                </li>
+                <li class="nav-item" @onclick="@(()=>OnClickMenu("nav-item"))">
+                    <NavLink class="nav-link" href="products">
+                        <span class="oi oi-plus" aria-hidden="true"></span> Products
+                    </NavLink>
+                </li>
+                <li class="nav-item dropdown" @onclick:preventDefault="true" @onclick="@(()=>OnClickMenu("dropdown-1"))">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Activities
+                    </a>
+                    @if (expandSubNav1)
+                    {
+                        <ul class="dropdown-menu show" aria-labelledby="navbarDropdown">
+                            <li class="nav-item" @onclick:stopPropagation="true" @onclick="@(()=>OnClickMenu("nav-item"))">
+                            <NavLink class="dropdown-item" href="purchase">
+                                <span class="oi oi-plus" aria-hidden="true"></span> Purchase
+                            </NavLink>
+                        </li>
+                            <li class="nav-item" @onclick:stopPropagation="true" @onclick="@(()=>OnClickMenu("nav-item"))">
+                                <NavLink class="dropdown-item" href="produce">
+                                <span class="oi oi-plus" aria-hidden="true"></span> Produce
+                            </NavLink>
+                        </li>
+                            <li class="nav-item" @onclick:stopPropagation="true" @onclick="@(()=>OnClickMenu("nav-item"))">
+                                <NavLink class="dropdown-item" href="sell">
+                                <span class="oi oi-plus" aria-hidden="true"></span> Sell
+                            </NavLink>
+                        </li>
+                    </ul>
+                    }
+                </li>
+                <li class="nav-item dropdown" @onclick:preventDefault="true" @onclick="@(()=>OnClickMenu("dropdown-2"))">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Reports
+                    </a>
+                    @if (expandSubNav2)
+                    {
+                        <ul class="dropdown-menu show" aria-labelledby="navbarDropdown">
+                            <li class="nav-item" @onclick:stopPropagation="true" @onclick="@(()=>OnClickMenu("nav-item"))">
+                                <NavLink class="dropdown-item" href="productreport">
+                                    <span class="oi oi-plus" aria-hidden="true"></span> Product Report
+                                </NavLink>
+                            </li>
+                            <li class="nav-item" @onclick:stopPropagation="true" @onclick="@(()=>OnClickMenu("nav-item"))">
+                                <NavLink class="dropdown-item" href="inventoryreport">
+                                    <span class="oi oi-plus" aria-hidden="true"></span> Inventory Report
+                                </NavLink>
+                            </li>
+                        </ul>
+                    }
+                </li>
+            </ul>
+            <button type="button"
+                    class="btn btn-primary"
+                    @onclick="manageUsers">
+                Manage Users
+            </button>
+            <LoginComponent></LoginComponent>
+        </div>
+    </div>
+</nav>
+<main>
+    <div class="bg-light p-5">
+        @Body
+    </div>
+</main>
+
+
+@code {
+    bool collapseNavMenu = true;
+    string NavMenuCssClass => "navbar-collapse" + (collapseNavMenu ? " collapse" : "");
+
+    bool expandSubNav1;
+    bool expandSubNav2;
+
+    void OnClickMenu(string className)
+    {
+        switch(className)
+        {
+            case "navbar-toggler":
+                collapseNavMenu = !collapseNavMenu;
+                break;
+            case "dropdown-1":
+                expandSubNav1 = !expandSubNav1;
+                expandSubNav2 = false;
+                break;
+            case "dropdown-2":
+                expandSubNav2 = !expandSubNav2;
+                expandSubNav1 = false;
+                break;
+            case "nav-item":
+                expandSubNav1 = false;
+                expandSubNav2 = false;
+                break;
+        }
+    }
+
+    private void manageUsers()
+    {
+        NavigationManager.NavigateTo("/manageusers");
+    }
+
+}
