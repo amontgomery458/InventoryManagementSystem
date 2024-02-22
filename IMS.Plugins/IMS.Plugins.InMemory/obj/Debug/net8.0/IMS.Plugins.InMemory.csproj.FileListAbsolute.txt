@@ -15,3 +15,4 @@ C:\Users\alexi\source\UdemyProjects\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Deb
 C:\Users\alexi\source\UdemyProjects\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\refint\IMS.Plugins.InMemory.dll
 C:\Users\alexi\source\UdemyProjects\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.pdb
 C:\Users\alexi\source\UdemyProjects\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\ref\IMS.Plugins.InMemory.dll
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.sourcelink.json

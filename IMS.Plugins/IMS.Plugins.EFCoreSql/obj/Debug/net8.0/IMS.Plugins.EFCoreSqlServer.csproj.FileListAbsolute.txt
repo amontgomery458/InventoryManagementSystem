@@ -17,3 +17,4 @@ C:\Users\alexi\source\UdemyProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\De
 C:\Users\alexi\source\UdemyProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net8.0\IMS.Plugins.EFCoreSqlServer.pdb
 C:\Users\alexi\source\UdemyProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net8.0\IMS.Plugins.EFCoreSqlServer.genruntimeconfig.cache
 C:\Users\alexi\source\UdemyProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net8.0\ref\IMS.Plugins.EFCoreSqlServer.dll
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.Plugins\IMS.Plugins.EFCoreSql\obj\Debug\net8.0\IMS.Plugins.EFCoreSqlServer.sourcelink.json

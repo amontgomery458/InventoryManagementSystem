@@ -13,3 +13,4 @@ C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCas
 C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\refint\IMS.UseCases.dll
 C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.pdb
 C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\ref\IMS.UseCases.dll
+C:\Users\alexi\source\UdemyProjects\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.sourcelink.json
